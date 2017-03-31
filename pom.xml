@@ -3,7 +3,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.yk.demo</groupId>
     <artifactId>mock-server</artifactId>
-    <packaging>jar</packaging>
     <version>0.1.0-SNAPSHOT</version>
     <name>mock-server Maven Webapp</name>
     <url>http://maven.apache.org</url>
@@ -21,7 +20,12 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-
+        <!-- 增加springboot的AOP依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+            <version>1.5.2.RELEASE</version>
+        </dependency>
         <!-- 包含了spring web mvc 和tomcat等web开发的特性 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
